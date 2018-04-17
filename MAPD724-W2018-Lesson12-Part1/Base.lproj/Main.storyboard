@@ -57,11 +57,20 @@
                                 <rect key="frame" x="217" y="123" width="48" height="30"/>
                                 <state key="normal" title="Search"/>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Oh-11-Xol">
+                                <rect key="frame" x="69" y="602" width="108" height="30"/>
+                                <state key="normal" title="See in Map App"/>
+                                <connections>
+                                    <action selector="seeinMapApp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4oP-h7-NKP"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="2Ed-X1-17F" firstAttribute="top" secondItem="adh-nN-ElX" secondAttribute="bottom" constant="29" id="NEE-w2-Rgt"/>
                             <constraint firstItem="2Ed-X1-17F" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="QS4-Tl-8ae"/>
+                            <constraint firstItem="4Oh-11-Xol" firstAttribute="top" secondItem="2Ed-X1-17F" secondAttribute="bottom" constant="34" id="bI1-RU-Yii"/>
+                            <constraint firstItem="4Oh-11-Xol" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="69" id="buf-5l-qOV"/>
                             <constraint firstItem="2Ed-X1-17F" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="eI7-go-gMP"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="2Ed-X1-17F" secondAttribute="bottom" constant="99" id="kVo-HU-oxA"/>
                         </constraints>

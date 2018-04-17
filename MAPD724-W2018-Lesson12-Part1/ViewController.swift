@@ -27,10 +27,19 @@ class ViewController: UIViewController {
         self.map.addAnnotation(ann)
     
         
-        
-        
     }
 
 
+    @IBAction func seeinMapApp(_ sender: UIButton) {
+        let placemark = MKPlacemark(coordinate: self.mapLocation,addressDictionary: nil)
+        let mapitem = MKMapItem(placemark:placemark)
+        mapitem.name = "A really icy place"
+        
+        mapitem.openInMaps (launchOptions: [MKLaunchOptionsMapTypeKey: MKMapType.standard.rawValue,
+                MKLaunchOptionsMapCenterKey :self.map.region.center,
+                MKLaunchOptionsMapSpanKey: self.map.region.span
+        ])
+        
+    }
 }
 
