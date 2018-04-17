@@ -5,6 +5,7 @@ import MapKit
 
 class ViewController: UIViewController {
 
+   
     @IBOutlet weak var map: MKMapView!
     //To fix
     let lat = 43.6532
@@ -19,6 +20,15 @@ class ViewController: UIViewController {
        let reg = MKCoordinateRegionMake(loc, span)
         
         self.map.region = reg
+        let ann = MKPointAnnotation()
+        ann.coordinate = self.mapLocation
+        ann.title = "Toronto"
+        ann.subtitle = "A place that;s really cool"
+        self.map.addAnnotation(ann)
+    
+        
+        
+        
     }
 
 
